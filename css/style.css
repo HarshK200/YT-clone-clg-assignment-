@@ -16,20 +16,25 @@
 
 body {
   background-color: var(--background-primary);
-  /* overflow: hidden; */
 }
 
 /************************** NAVBAR CSS **************************/
 
 .navbar {
   padding-top: 0.5rem;
+  padding-bottom: 1rem;
+
   padding-left: 2rem;
   padding-right: 2rem;
+
   background-color: var(--background-primary);
   display: flex;
   justify-content: space-between;
-
   align-items: center;
+
+  /*---- FOR FIXED ON SCROLL ----*/
+  position: sticky;
+  top: 0;
 }
 
 .logo-container {
@@ -85,14 +90,17 @@ body {
 /************************** APP DRAWER CSS **************************/
 
 .main-section {
-  padding-top: 0.5rem;
   display: flex;
 }
 
 .app-drawer {
   height: calc(100vh - calc(2.5rem + 0.5rem));
-  width: 230px;
-  padding: 0.7rem 0.8rem;
+  width: 17rem;
+  margin: 0 0.8rem;
+
+  /*---- FOR FIXED ON SCROLL ----*/
+  position: sticky;
+  top: 4rem; /**/
 }
 
 .app-drawer button {
@@ -129,14 +137,24 @@ body {
   background: var(--background-secondary);
 }
 
+/************************** FILTER AND VIDEO CONTAINER CSS **************************/
+.filter-and-vids-container {
+  width: 100%;
+  margin: 0rem 2rem 0 0.5rem;
+}
 
 /************************** FILTER BUTTONS CSS **************************/
 
 .filters {
+  background-color: var(--background-primary);
   display: flex;
   height: fit-content;
-  padding: 1rem 3rem;
   gap: 1rem;
+  padding-bottom: 1rem;
+
+  /*---- FOR FIXED ON SCROLL ----*/
+  position: sticky;
+  top: 4rem; /**/
 }
 
 .filters button {
@@ -144,7 +162,7 @@ body {
   border: 0px;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  font-size: 16px;
+  font-size: 14px;
   background: var(--border-primary);
 }
 
@@ -152,4 +170,44 @@ body {
 #All-btn {
   background: white;
   color: var(--background-primary);
+}
+
+
+/************************** VIDEOS CSS **************************/
+
+.videos {
+  /* height: 100%; */
+  /* display: grid; */
+  /* grid-gap: 1rem; */
+  /* grid-template-rows: ; */
+  /* grid-template-columns: ; */
+  padding-top: 1rem;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  height: 24rem;
+}
+
+.video-container:hover {
+  cursor: pointer;
+}
+
+.video-container img {
+  border-radius: 0.8rem;
+}
+
+
+.video-container .video-metadata {
+  padding-top: 0.7rem;
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+
+.video-container .video-metadata h4 {
+  padding: 0.5rem 0;
 }
