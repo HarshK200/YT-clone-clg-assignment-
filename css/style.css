@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  box-sizing: border-box;
+  color: white;
+
+  --background-primary: #0f0f0f;
+  --background-secondary: #252525;
+  --border-primary: #2b2b2b;
+
+  --button-background: #222222;
+  --serach-focus-blue: #1c62b9;
+}
+
+body {
+  background-color: var(--background-primary);
+}
+
+.navbar {
+  width: 100vw;
+  padding-top: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: var(--background-primary);
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.search-bar-container {
+  display: flex;
+}
+
+.search-bar-container input {
+  z-index: 10;
+  width: 33rem;
+  height: 2.5rem;
+  padding-left: 1rem;
+  padding-bottom: 0.1rem;
+  border: 1px solid var(--border-primary);
+  border-radius: 3rem 0 0 3rem;
+  background-color: var(--background-primary);
+  font-size: 16px;
+}
+
+.search-bar-container input:focus {
+  outline: 1px solid var(--serach-focus-blue);
+}
+
+.search-bar-container button {
+  background: var(--button-background);
+  border: none;
+  border: 1px solid var(--border-primary);
+  border-radius: 0 3rem 3rem 0;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  cursor: pointer;
+}
+
+/* APP DRAWER CSS */
+
+.main-section {
+  padding-top: 0.5rem;
+  display: flex;
+}
+
+.app-drawer {
+  height: calc(100vh - calc(2.5rem + 0.5rem));
+  width: 230px;
+  padding: 0.7rem 0.8rem;
+}
+
+.app-drawer button {
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  border: 0px;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  display: flex;
+
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.app-drawer button:hover {
+  background-color: var(--border-primary);
+}
+
+#you-btn {
+  gap: 0.7rem;
+}
+
+.app-drawer hr {
+  border: 1px solid var(--border-primary);
+  margin: 1rem 0;
+}

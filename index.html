@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment YT-Clone</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="assets/YouTube_Logo.svg" width="100" />
+      </div>
+
+      <div class="search-bar-container">
+        <input placeholder="Search" />
+        <button>
+          <img src="assets/search-100.png" width="23" />
+        </button>
+      </div>
+
+      <div>notifications</div>
+    </nav>
+
+    <section class="main-section">
+      <div class="app-drawer">
+
+        <button id="home-btn">
+          <img src="assets/house-icon.svg" width="23" />
+          <span>Home</span>
+        </button>
+
+        <button id="shorts-btn">
+          <img src="assets/Shorts-icon.svg" width="23" />
+          <span>Shorts</span>
+        </button>
+
+        <button id="subscriptions-btn">
+          <img src="assets/subscription-icon.svg" width="23" />
+          <span>Subscriptions</span>
+        </button>
+
+        <div class="line-container">
+          <hr />
+        </div>
+
+        <button id="you-btn">
+          <h3>You</h3>
+          <img src="assets/angle-right-solid.svg" width="10" />
+        </button>
+
+        <button id="history-btn">
+          <img src="assets/history-icon.svg" width="20" />
+          <span>History</span>
+        </button>
+
+      </div>
+      <main>
+        <div class="filters"></div>
+        <div class="videos">
+          <div class="video-container"></div>
+        </div>
+      </main>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
