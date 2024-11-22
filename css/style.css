@@ -24,6 +24,7 @@ body::-webkit-scrollbar-thumb {
   --button-background: #222222;
   --serach-focus-blue: #1c62b9;
   --metadata-color: #989898;
+  --hover-background: #3f3f3f;
 }
 
 body {
@@ -176,7 +177,12 @@ body {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   font-size: 14px;
-  background: var(--border-primary);
+  background: var(--background-secondary);
+}
+
+.filters button:hover {
+  transition: background-color 0.4s;
+  background-color: var(--hover-background);
 }
 
 /*------- FILTER BUTTONS active state/custom buttons -------*/
