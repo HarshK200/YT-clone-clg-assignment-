@@ -45,9 +45,11 @@ body {
   justify-content: space-between;
   align-items: center;
 
+
   /*---- FOR FIXED ON SCROLL ----*/
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .logo-container {
@@ -115,6 +117,7 @@ body {
   /*---- FOR FIXED ON SCROLL ----*/
   position: sticky;
   top: 4rem; /**/
+  z-index: 100;
 }
 
 .app-drawer button {
@@ -169,6 +172,7 @@ body {
   /*---- FOR FIXED ON SCROLL ----*/
   position: sticky;
   top: 4rem; /**/
+  z-index: 100;
 }
 
 .filters button {
