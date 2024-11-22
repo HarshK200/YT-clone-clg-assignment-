@@ -16,7 +16,7 @@
 
 body {
   background-color: var(--background-primary);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /************************** NAVBAR CSS **************************/
@@ -111,11 +111,7 @@ body {
 }
 
 .app-drawer button:hover {
-  background-color: var(--border-primary);
-}
-
-#you-btn {
-  gap: 0.7rem;
+  background-color: var(--background-secondary);
 }
 
 .app-drawer hr {
@@ -123,7 +119,37 @@ body {
   margin: 1rem 0;
 }
 
-/************************** MAIN SECTION CSS **************************/
+/*------- APP DRAWER active state/custom buttons -------*/
+
+#you-btn {
+  gap: 0.7rem;
+}
+
+#home-btn {
+  background: var(--background-secondary);
+}
+
+
+/************************** FILTER BUTTONS CSS **************************/
 
 .filters {
+  display: flex;
+  height: fit-content;
+  padding: 1rem 3rem;
+  gap: 1rem;
+}
+
+.filters button {
+  cursor: pointer;
+  border: 0px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  background: var(--border-primary);
+}
+
+/*------- FILTER BUTTONS active state/custom buttons -------*/
+#All-btn {
+  background: white;
+  color: var(--background-primary);
 }
