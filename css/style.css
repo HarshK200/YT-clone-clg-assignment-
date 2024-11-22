@@ -16,10 +16,12 @@
 
 body {
   background-color: var(--background-primary);
+  overflow: hidden;
 }
 
+/************************** NAVBAR CSS **************************/
+
 .navbar {
-  width: 100vw;
   padding-top: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -67,7 +69,20 @@ body {
   cursor: pointer;
 }
 
-/* APP DRAWER CSS */
+.navbar-action-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navbar-action-btns button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+/************************** APP DRAWER CSS **************************/
 
 .main-section {
   padding-top: 0.5rem;
@@ -106,4 +121,9 @@ body {
 .app-drawer hr {
   border: 1px solid var(--border-primary);
   margin: 1rem 0;
+}
+
+/************************** MAIN SECTION CSS **************************/
+
+.filters {
 }

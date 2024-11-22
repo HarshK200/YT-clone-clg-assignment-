@@ -19,48 +19,95 @@
         </button>
       </div>
 
-      <div>notifications</div>
+      <div class="navbar-action-btns">
+        <button id="add-video-btn">
+          <img src="assets/add-video-icon.svg" width="25" />
+        </button>
+        <button id="notifications-btn">
+          <img src="assets/notification-icon.svg" width="25" />
+        </button>
+        <button id="profile-btn">
+          <img src="assets/profile-icon.svg" width="25" />
+        </button>
+      </div>
     </nav>
 
     <section class="main-section">
       <div class="app-drawer">
-
-        <button id="home-btn">
+        <button id="home-btn" onclick="document.location='#home'">
           <img src="assets/house-icon.svg" width="23" />
           <span>Home</span>
         </button>
 
-        <button id="shorts-btn">
+        <button id="shorts-btn" onclick="document.location='#shorts-btn'">
           <img src="assets/Shorts-icon.svg" width="23" />
           <span>Shorts</span>
         </button>
 
-        <button id="subscriptions-btn">
-          <img src="assets/subscription-icon.svg" width="23" />
+        <button
+          id="subscriptions-btn"
+          onclick="document.location='#subscriptions-btn'"
+        >
+          <img src="assets/subscriptions-icon.svg" width="23" />
           <span>Subscriptions</span>
         </button>
 
-        <div class="line-container">
-          <hr />
-        </div>
+        <hr />
 
-        <button id="you-btn">
+        <button id="you-btn" onclick="document.location='#you-btn'">
           <h3>You</h3>
           <img src="assets/angle-right-solid.svg" width="10" />
         </button>
 
-        <button id="history-btn">
+        <button id="history-btn" onclick="document.location='#history-btn'">
           <img src="assets/history-icon.svg" width="20" />
           <span>History</span>
         </button>
 
+        <button id="playlists-btn" onclick="document.location='#playlists-btn'">
+          <img src="assets/playlist-icon.svg" width="20" />
+          <span>Playlists</span>
+        </button>
+
+        <button
+          id="your-videos-btn"
+          onclick="document.location='#your-videos-btn'"
+        >
+          <img src="assets/your-vedios-icon.svg" width="20" />
+          <span>Your videos</span>
+        </button>
+
+        <button
+          id="your-courses-btn"
+          onclick="document.location='#your-courses-btn'"
+        >
+          <img src="assets/your-courses-icon.svg" width="21" />
+          <span>Your courses</span>
+        </button>
+
+        <button
+          id="watch-later-btn"
+          onclick="document.location='#watch-later-btn'"
+        >
+          <img src="assets/watch-later-icon.svg" width="20" />
+          <span>Watch Later</span>
+        </button>
+
+        <button
+          id="liked-videos-btn"
+          onclick="document.location='#liked-videos-btn'"
+        >
+          <img src="assets/like-icon.svg" width="20" />
+          <span>Liked videos</span>
+        </button>
       </div>
-      <main>
-        <div class="filters"></div>
-        <div class="videos">
-          <div class="video-container"></div>
-        </div>
-      </main>
+
+      <div class="filters">
+      </div>
+
+      <div class="videos">
+        <div class="video-container"></div>
+      </div>
     </section>
 
     <script src="index.js"></script>
