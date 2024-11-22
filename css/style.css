@@ -197,6 +197,8 @@ body {
   flex-direction: column;
   width: 32rem;
   height: 24rem;
+
+  position: relative;
 }
 
 .video-container:hover {
@@ -205,6 +207,17 @@ body {
 
 .video-container img {
   border-radius: 0.8rem;
+}
+
+.video-container span {
+  position: absolute;
+  right: 0.5rem;
+  top: 16rem;
+  background-color: black;
+  opacity: 60%;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 12px;
 }
 
 .video-container .video-metadata {
