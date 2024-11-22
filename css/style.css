@@ -23,6 +23,7 @@ body::-webkit-scrollbar-thumb {
 
   --button-background: #222222;
   --serach-focus-blue: #1c62b9;
+  --metadata-color: #989898;
 }
 
 body {
@@ -49,6 +50,7 @@ body {
 }
 
 .logo-container {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -206,6 +208,7 @@ body {
 }
 
 .video-container img {
+  padding: 0.1rem;
   border-radius: 0.8rem;
 }
 
@@ -213,15 +216,16 @@ body {
   position: absolute;
   right: 0.5rem;
   top: 16rem;
+
   background-color: black;
   opacity: 60%;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   padding: 0.2rem 0.5rem;
   font-size: 12px;
 }
 
 .video-container .video-metadata {
-  padding-top: 0.7rem;
+  padding-top: 0.5rem;
   display: flex;
   align-items: start;
   gap: 0.5rem;
@@ -229,4 +233,8 @@ body {
 
 .video-container .video-metadata h4 {
   padding: 0.5rem 0;
+}
+
+.video-container .video-metadata p {
+  color: var(--metadata-color);
 }

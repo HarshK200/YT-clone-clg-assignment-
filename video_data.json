@@ -1,0 +1,26 @@
+[
+  {
+    "thumbnail_src": "assets/thumbnails/thumbnail1.jpg",
+    "video_length": "1:19:10",
+    "channel_profile_pic_src": "assets/profile-icon.svg",
+    "title": "I tried React and it Ruined My Life",
+    "channel_name": "Tscoding Daily",
+    "released": "150K views ・ 1 year ago"
+  },
+  {
+    "thumbnail_src": "assets/thumbnails/thumbnail2.jpg",
+    "video_length": "1:03:17",
+    "channel_profile_pic_src": "assets/profile-icon.svg",
+    "title": "i will keep trying",
+    "channel_name": "drift",
+    "released": "92K views ・ 2 weeks ago"
+  },
+  {
+    "thumbnail_src": "assets/thumbnails/thumbnail3.jpg",
+    "video_length": "1:00:38:37",
+    "channel_profile_pic_src": "assets/profile-icon.svg",
+    "title": "Make you feel positive and peaceful 🍀 Lofi Coffee ☕ ~ Lofi Hip Hop - Lofi Music [ Study/ Relax ]",
+    "channel_name": "Lofi Coffee",
+    "released": "2.9M views ・ 6 months ago"
+  }
+]
